@@ -4,18 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class EmployeeSocondHieght {
+public class EmployeeSocondHieghtSalary {
     int id;
     String name;
     double salary;
 
-    public EmployeeSocondHieght(int id, String name, double salary) {
+    public EmployeeSocondHieghtSalary(int id, String name, double salary) {
         this.id = id;
         this.name = name;
         this.salary = salary;
     }
 
-    public EmployeeSocondHieght() {
+    public EmployeeSocondHieghtSalary() {
 
     }
 
@@ -44,21 +44,21 @@ public class EmployeeSocondHieght {
     }
 
     public static void main(String[] args) {
-        EmployeeSocondHieght emp1 = new EmployeeSocondHieght(1, "amit", 10000);
-        EmployeeSocondHieght emp2 = new EmployeeSocondHieght(2, "rahul", 15000);
-        EmployeeSocondHieght emp3 = new EmployeeSocondHieght(2, "rahul", 20000);
+        EmployeeSocondHieghtSalary emp1 = new EmployeeSocondHieghtSalary(1, "amit", 10000);
+        EmployeeSocondHieghtSalary emp2 = new EmployeeSocondHieghtSalary(2, "rahul", 15000);
+        EmployeeSocondHieghtSalary emp3 = new EmployeeSocondHieghtSalary(2, "rahul", 20000);
 
-        ArrayList<EmployeeSocondHieght> al = new ArrayList<>();
+        ArrayList<EmployeeSocondHieghtSalary> al = new ArrayList<>();
         al.add(emp1);
         al.add(emp2);
         al.add(emp3);
 
-        List<EmployeeSocondHieght> list = al.stream().
+        List<EmployeeSocondHieghtSalary> list = al.stream().
                 sorted((e1, e2) -> (int) (e1.getSalary() - e2.getSalary())).
                 skip(1).
                 collect(Collectors.toList());
 
-        System.out.println(list.get(0).salary);
+        System.out.println(list.get(0).getSalary());
 
 
     }

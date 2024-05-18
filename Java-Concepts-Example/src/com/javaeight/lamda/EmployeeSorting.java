@@ -1,7 +1,10 @@
 package com.javaeight.lamda;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 //sorted on the basis of Name then salary after getting salary more than 50000.
@@ -32,22 +35,27 @@ public class EmployeeSorting {
 		list.add(emp3);
 		list.add(emp4);
 
-		// sorted on the basis of Name then salary after getting salary more than 50000.
+		
+		
+		
+		// sorted on the basis of Name 
 		System.out.println("name sorting");
 		list.stream().sorted((emp5, emp6) -> (emp5.getName().compareTo(emp6.getName()))).collect(Collectors.toList())
 				.forEach(System.out::println);
+		
 
-		System.out.println("salary sorting aftr 50000");
+		
+		// sorted on the basis of Name then salary 
+		
+		
+		System.out.println("sorted on the basis of salary after getting salary more than 50000");
 
-//sorted on the basis of Name then salary after getting salary more than 50000
-		list.stream().filter(e -> e.getSalary() > 50000)
-		        .sorted((es1, es2) -> (es1.getName().compareTo(es2.getName())))
-				.sorted((es3, es4) -> (es3.getSalary() - es4.getSalary()))
-				.collect(Collectors.toList())
+		// sorted on the basis of Name then salary after getting salary more than 50000
+		list.stream().filter(e -> e.getSalary() > 50000).sorted((es1, es2) -> (es1.getName().compareTo(es2.getName())))
+				.sorted((es3, es4) -> (es3.getSalary() - es4.getSalary())).collect(Collectors.toList())
 				.forEach(System.out::println);
-	}
 
-	// sorted on the basis of salary after getting salary more than 50000
+			}
 
 	@Override
 	public String toString() {

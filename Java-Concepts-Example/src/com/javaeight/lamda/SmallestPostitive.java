@@ -14,7 +14,7 @@ public class SmallestPostitive {
 
         //List list=integerlist.stream().sorted().filter(e->e>3).collect(Collectors.toList());
 
-        System.out.println(integerlist.stream().sorted().findFirst().get());
+        System.out.println(integerlist.stream().sorted().filter(e->e>=0).findFirst().get());
 
 
     }

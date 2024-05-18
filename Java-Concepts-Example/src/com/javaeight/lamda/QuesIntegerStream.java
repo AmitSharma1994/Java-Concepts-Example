@@ -11,12 +11,11 @@ Q4 Given the list of integers, find the first element of the list using Stream f
 Q5 Given a list of integers, find the total number of elements present in the list using Stream functions.
 Q6 Given a list of integers, find the maximum value element present in it using Stream functions
 Q7 Given a String, find the first non-repeated character in it using Stream functions.
-
 Q8 Given a String, find the first non-repeated character in it using Stream functions.
 Q9 Given a list of integers, sort all the values present in it using Stream functions.
 Q10 Given a list of integers, sort all the values present in it in descending order using Stream functions
  */
-public class StreamFunctionQuestion {
+public class QuesIntegerStream {
 
     public static void main(String[] args) {
         List<Integer> mylist = Arrays.asList(10, 20, 30, 40, 5, 7);
@@ -61,20 +60,6 @@ public class StreamFunctionQuestion {
         List<Integer> myList6 = Arrays.asList(10, 15, 8, 49, 25, 98, 98, 32, 15);
         System.out.println(myList6.stream().max(Integer::compareTo).get());
 
-        /*Q7 Given a String, find the first non-repeated character in it using Stream functions?*/
-        String input = "Java Hungry Blog Alive is Awesome";
-
-        Character result = input.chars().mapToObj(s -> Character.toLowerCase(Character.valueOf((char) s)))
-                .collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting()))
-                .entrySet().stream().
-                filter(entry -> entry.getValue() == 1L)
-                .map(entry -> entry.getKey())
-                .findFirst().get();
-        System.out.println(result);
-        /*Q8 Given a String, find the first non-repeated character in it using Stream functions?*/
-
-
-
         /*Q9 Given a list of integers, sort all the values present in it using Stream functions?*/
 
         List<Integer> myList9 = Arrays.asList(10, 15, 8, 49, 25, 98, 98, 32, 15);
@@ -87,12 +72,7 @@ public class StreamFunctionQuestion {
         List<Integer> myList10 = Arrays.asList(10, 15, 8, 49, 25, 98, 98, 32, 15);
         System.out.println(myList10.stream().sorted(Collections.reverseOrder()).collect(Collectors.toList()));
 
-        /*Q11.counting the frequency of    */
-
-        List<String> strList = Arrays.asList("abc", "", "bcd", "", "defg", "jk");
-
-
-       long a=  strList.stream().filter(e -> e.isEmpty()).count();
+      
 
     }
 }
