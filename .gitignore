@@ -1,0 +1,23 @@
+# Ignore all .log files
+*.log
+
+# Ignore all files in the build/ directory
+build/
+
+# Ignore .env file
+.env
+
+# Ignore node_modules/ directory (for Node.js projects)
+node_modules/
+
+# Ignore IntelliJ IDEA project files
+.idea/
+
+# Ignore Eclipse project files
+.project
+.classpath
+.settings/
+
+# Ignore MacOS system files
+.DS_Store
+
