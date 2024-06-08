@@ -35,19 +35,21 @@ public class EmployeeSorting {
 		list.add(emp3);
 		list.add(emp4);
 
-		
-		
-		
-		// sorted on the basis of Name 
+		// sorted on the basis of Name
 		System.out.println("name sorting");
 		list.stream().sorted((emp5, emp6) -> (emp5.getName().compareTo(emp6.getName()))).collect(Collectors.toList())
 				.forEach(System.out::println);
-		
+
+		List<EmployeeSorting> sorting = list.stream().filter(e -> e.getDep() == "HR" && e.getName().contains("s"))
+				.collect(Collectors.toList());
 
 		
-		// sorted on the basis of Name then salary 
+          System.out.println("sorting"+sorting);
 		
 		
+		
+		// sorted on the basis of Name then salary
+
 		System.out.println("sorted on the basis of salary after getting salary more than 50000");
 
 		// sorted on the basis of Name then salary after getting salary more than 50000
@@ -55,7 +57,7 @@ public class EmployeeSorting {
 				.sorted((es3, es4) -> (es3.getSalary() - es4.getSalary())).collect(Collectors.toList())
 				.forEach(System.out::println);
 
-			}
+	}
 
 	@Override
 	public String toString() {

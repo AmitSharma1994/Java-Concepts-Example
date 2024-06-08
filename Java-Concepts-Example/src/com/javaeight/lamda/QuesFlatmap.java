@@ -21,6 +21,17 @@ public class QuesFlatmap {
 
 		System.out.println(sum);
 
-//.list.stream().flatMapToInt(Arrays::stream).sum();
+		int sum1 = 0;
+
+		for (int[] row : arr) {
+
+			for (int element : row) {
+
+				sum1 = sum1 + element;
+			}
+
+		}
+		System.out.println("sum1:-" + sum1);
+		// .list.stream().flatMapToInt(Arrays::stream).sum();
 	}
 }

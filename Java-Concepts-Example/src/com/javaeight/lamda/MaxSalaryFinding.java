@@ -70,6 +70,11 @@ public class MaxSalaryFinding {
         list.add(emp4);
 
          System.out.println(list.stream().max((e1, e2) -> (e1.getSalary() - e2.getSalary())).get().getSalary());
+         
         System.out.println(list.stream().max(Comparator.comparingInt(es -> es.getSalary())).get().getSalary());
+        
+        System.out.println(list.stream().max(Comparator.comparingInt(es -> es.getSalary())));
+        
+        System.out.println(list.stream().max(Comparator.comparing(MaxSalaryFinding::getSalary)).get().getSalary());
     }
 }

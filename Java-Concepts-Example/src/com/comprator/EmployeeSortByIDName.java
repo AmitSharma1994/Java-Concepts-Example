@@ -50,9 +50,14 @@ public class EmployeeSortByIDName {
 
 		System.out.println("before sorting");
 		list.stream().forEach(System.out::println);
+		
+		
 		System.out.println("after sorting by id");
 		Collections.sort(list, new Employeeid());
 		list.stream().forEach(System.out::println);
+		
+		
+		
 		System.out.println("after sorting by Name");
 		Collections.sort(list, new EmplyeeName());
 		list.stream().forEach(System.out::println);

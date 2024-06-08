@@ -24,6 +24,11 @@ public class StringDuplicateRemove {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
+	 
+	 hs.forEach(System.out::print);
+	 
+	 hs.forEach(e->System.out.print(e));
+	 
 		System.out.println();
 		
 		//using Stream
@@ -40,6 +45,7 @@ public class StringDuplicateRemove {
 		
 		
 		List<Character> listchar=  str.chars().mapToObj(ch->(char)ch).collect(Collectors.toList());
+		System.out.println("listcahr:-"+listchar);
 		
 		//collecting the stream value in set so it will remove all the duplicate value. 
 		System.out.println(str.chars().mapToObj(ch->(char)ch).collect(Collectors.toSet()));

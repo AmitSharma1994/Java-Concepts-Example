@@ -75,6 +75,22 @@ public class EmployeeGropingBy {
 		map.forEach((depart, count) -> {
 			System.out.println(depart + " " + count);
 		});
+		
+		
+		
+	Map<String, List<EmployeeGropingBy>>  map1=	list.stream()
+		.collect(Collectors.groupingBy(EmployeeGropingBy::getDep, Collectors.toList()));
+	
+	
+	System.out.println("list of employee");
+	
+	//map1.forEach((depart,employeelist)->{
+		//System.out.println(depart +" "+employeelist.forEach(e->e.id));
+	//});
+	
+		
+		
+		
 
 		//map.forEach((depart, count) -> System.out.println(depart + " " + count));
 

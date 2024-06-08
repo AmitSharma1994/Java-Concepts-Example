@@ -26,10 +26,16 @@ public class StringFreqHM {
 				hm.put(ch[i], (hm.get(ch[i]) + 1));
 			}
 		}
+
 		for (Map.Entry hm1 : hm.entrySet()) {
 			sb.append(hm1.getKey()).append(hm1.getValue());
 			System.out.println();
 		}
+
+		hm.forEach((key, value) -> System.out.println(key + " " + value));
+
+		hm.forEach((key, value) -> System.out.println(key + " " + value));
+
 		return sb.toString();
 	}
 

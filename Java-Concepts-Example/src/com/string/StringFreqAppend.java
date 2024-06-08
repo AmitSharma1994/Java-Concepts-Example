@@ -1,6 +1,6 @@
 package com.string;
 
-/* Input: aabbccc, output: a2b2c3
+/* ask  in EPAM Input: aabbccc, output: a2b2c3
         Input: aabbaaa, output: a2b2a3
         Input: aabba, output: a2b2a1*/
 public class StringFreqAppend {

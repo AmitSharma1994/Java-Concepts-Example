@@ -2,13 +2,16 @@ package com.javaeight.fi;
 
 @FunctionalInterface
 interface Addable {
-    void add(int a, int b, String name);
+    int add(int a, int b, int c);
 }
 
-public class SumoftoNumber {
+public abstract class SumoftoNumber implements Addable {
 
     public static void main(String[] args) {
-        Addable ad = (a, b, c) -> System.out.println(a + b);
+    	
+    	Addable ad = (a, b, c) ->{
+        	return c=a+b+c;
+        };
 
 		/*	System.out.println(a + b);
 			System.out.println(c+"hello");
@@ -16,7 +19,9 @@ public class SumoftoNumber {
 
 		};*/
 
-        ad.add(10, 20, "amit");
+       System.out.println(ad.add(10, 20, 30)); ;
 
     }
+
+	
 }

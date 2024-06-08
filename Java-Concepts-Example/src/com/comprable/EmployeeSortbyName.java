@@ -57,13 +57,15 @@ public class EmployeeSortbyName implements Comparable<EmployeeSortbyName> {
 	}
 
 	public static void main(String[] args) {
-		EmployeeSortbyName emp = new EmployeeSortbyName(1, "smit", "HR", 60000);
+		
+		EmployeeSortbyName emp =  new EmployeeSortbyName(1, "smit", "HR", 60000);
 		EmployeeSortbyName emp1 = new EmployeeSortbyName(2, "rahul", "HR", 700000);
 		EmployeeSortbyName emp2 = new EmployeeSortbyName(3, "abhinash", "HR", 200);
 		EmployeeSortbyName emp3 = new EmployeeSortbyName(4, "pankaj", "FIN", 20);
 		EmployeeSortbyName emp4 = new EmployeeSortbyName(5, "mukesh", "IT", 80000);
-
+		
 		List<EmployeeSortbyName> list = new ArrayList();
+		
 		list.add(emp);
 		list.add(emp1);
 		list.add(emp2);
@@ -78,9 +80,9 @@ public class EmployeeSortbyName implements Comparable<EmployeeSortbyName> {
 		list.stream().forEach(System.out::println);
 	}
 
+	
 	@Override
 	public int compareTo(EmployeeSortbyName o) {
-
 		return this.name.compareTo(o.name);
 	}
 }
