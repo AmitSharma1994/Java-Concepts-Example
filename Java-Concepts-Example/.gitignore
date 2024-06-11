@@ -30,6 +30,7 @@ build/
 .classpath
 .project
 .settings/
+bin/
 
 # Ignore IntelliJ IDEA project files
 .idea/
