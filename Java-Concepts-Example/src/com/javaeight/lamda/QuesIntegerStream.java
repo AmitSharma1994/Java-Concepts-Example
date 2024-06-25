@@ -59,6 +59,7 @@ public class QuesIntegerStream {
 
         List<Integer> myList6 = Arrays.asList(10, 15, 8, 49, 25, 98, 98, 32, 15);
         System.out.println(myList6.stream().max(Integer::compareTo).get());
+        System.out.println(myList6.stream().max(Integer::compareTo).get());
 
         /*Q9 Given a list of integers, sort all the values present in it using Stream functions?*/
 

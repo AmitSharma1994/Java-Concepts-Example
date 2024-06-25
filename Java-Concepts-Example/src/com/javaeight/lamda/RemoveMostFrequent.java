@@ -57,6 +57,9 @@ public class RemoveMostFrequent {
       Map<Integer, Long> frequencyMap = Arrays.stream(array)
           .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
       
+      
+      
+      
       // Find the most frequent element
       Integer mostFrequentElement = frequencyMap.entrySet().stream()
           .max(Map.Entry.comparingByValue())
