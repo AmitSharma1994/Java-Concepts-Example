@@ -1,4 +1,4 @@
-package com.array;
+package com.design.createnal;
 
 public class Singloton {
 private static Singloton sigle;

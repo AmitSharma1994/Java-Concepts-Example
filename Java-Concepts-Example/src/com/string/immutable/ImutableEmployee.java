@@ -1,4 +1,4 @@
-package com.design.pattern;
+package com.string.immutable;
 
 public final class ImutableEmployee {
 	private final String name = null;

@@ -71,6 +71,8 @@ public class EmployeeSortbyName implements Comparable<EmployeeSortbyName> {
 		list.add(emp2);
 		list.add(emp3);
 		list.add(emp4);
+		
+		
 		System.out.println("befor sorting");
 		list.stream().forEach(System.out::println);
 		// System.out.println(list);

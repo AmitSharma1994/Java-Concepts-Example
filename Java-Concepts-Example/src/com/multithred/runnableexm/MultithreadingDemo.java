@@ -23,7 +23,7 @@ public class MultithreadingDemo extends Thread {
 			MultithreadingDemo md = new MultithreadingDemo();
 			md.start();
 			
-			md.start();
+		//	md.start();
 
 	}
 }

@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
  * This is a series of methods you need to implement. Do them in the order that they appear in the file.
  * When you run the main method, it'll test the implementations.
  */
-public class Main {
+public class Pesrsitant {
     /**
      * Check if the given list of words has any duplicates.
      *

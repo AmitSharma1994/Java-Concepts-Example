@@ -1,4 +1,4 @@
-package com.basic;
+package com.output.question;
 
 public class Test {
 	
