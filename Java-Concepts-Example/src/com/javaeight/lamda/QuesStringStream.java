@@ -13,6 +13,9 @@ public class QuesStringStream {
 
 		/* Q1.counting the frequency of */
 
+		
+		
+		
 		List<String> strList = Arrays.asList("abc", "", "bcd", "", "defg", "jk");
 
 		long a = strList.stream().filter(e -> e.isEmpty()).count();

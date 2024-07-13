@@ -16,10 +16,12 @@ public class Test {
 		t2.x = 30;
 		t2.y = 40;
 
-		System.out.println(t1.x);
-		System.out.println(t1.y);
-		System.out.println(t2.x);
-		System.out.println(t2.y);
+		System.out.println(t1.x);  //
+		System.out.println(t1.y); //20
+		
+		
+		System.out.println(t2.x);  //  
+		System.out.println(t2.y);  //40
 		 
 	}
 
