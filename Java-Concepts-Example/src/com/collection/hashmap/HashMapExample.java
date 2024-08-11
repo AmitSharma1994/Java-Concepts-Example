@@ -1,6 +1,8 @@
 package com.collection.hashmap;
 
 import java.util.HashMap;
+import java.util.Set;
+import java.util.HashSet;
 import java.util.Objects;
 
 /*examle of overriding hascode and eqals method.*/
@@ -45,12 +47,27 @@ public class HashMapExample {
 		
 		HashMapExample hme2=new HashMapExample(1, "amit");
 		
-		HashMap<HashMapExample, Integer> hm=new HashMap<>();
+		StringBuilder sb1=new StringBuilder("amit");
 		
-		hm.put(hme, 1);
-		hm.put(hme2, 1);
+		StringBuilder sb2=new StringBuilder("amit");
+		
+		HashMap<StringBuilder, Integer> hm=new HashMap<>();
+		
+		Set set=new HashSet();
+		
+		
+		//hm.put(hme, 1);
+		//hm.put(hme2, 1);
+		hm.put(sb1, 1);
+		hm.put(sb2, 1);
+		
+		set.add(hme);
+		set.add(hme2);
 		
 		System.out.println(hm.size());
+		
+		System.out.println("set size"+set.size());
+		//System.out.println(h);
 		
 		
 	}

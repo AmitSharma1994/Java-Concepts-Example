@@ -7,7 +7,6 @@ public class ExceptionExample {
 		ExceptionExample ex = new ExceptionExample();
 
 		System.out.println(ex.m1());
-		;
 
 	}
 

@@ -1,4 +1,4 @@
-package com.javaeight.lamda;
+package com.javaeight.lamda.flatmap;
 
 import java.util.Arrays;
 import java.util.List;
@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 
 public class QuesFlatmap {
 
+	//
 	public static void main(String[] args) {
 
 		int arr[][] = { { 1, 2, 3 }, { 4 }, { 5, 6 } };
@@ -21,6 +22,7 @@ public class QuesFlatmap {
 
 		System.out.println(sum);
 
+		//find the array of two 2d array.
 		int sum1 = 0;
 
 		for (int[] row : arr) {

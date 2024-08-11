@@ -1,4 +1,4 @@
-package com.javaeight.lamda;
+package com.javaeight.lamda.groupby;
 
 import java.util.ArrayList;
 import java.util.Comparator;

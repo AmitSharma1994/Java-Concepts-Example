@@ -1,4 +1,4 @@
-package com.javaeight.lamda;
+package com.javaeight.fi.iq;
 
 import java.util.Arrays;
 import java.util.function.Supplier;
@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.*;
 
-public class TEst {
+public class ArrayConcating {
 
 	public static void main(String[] args) {
 		int[] array1 = {1, 3, 5, 7};       
@@ -18,13 +18,7 @@ public class TEst {
 
 		int[] arr= {1, 2, 3, 4, 5, 6, 7, 8,9,10};
 
-       Arrays.stream(arr).filter(e->(e%1==0 && e%e==0)).forEach(e->{
-    	   System.out.println(e);
-       });;
-  
-		 
-		
-  
+    
 
 //Finding prime numbers using Java8
 

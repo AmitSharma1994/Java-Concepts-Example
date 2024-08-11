@@ -1,4 +1,4 @@
-package com.javaeight.fi;
+package com.javaeight.fi.iq;
 
 @FunctionalInterface
 interface Addable {

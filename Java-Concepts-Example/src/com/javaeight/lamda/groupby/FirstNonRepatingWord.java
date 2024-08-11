@@ -1,4 +1,4 @@
-package com.javaeight.lamda;
+package com.javaeight.lamda.groupby;
 
 import java.util.Arrays;
 import java.util.LinkedHashMap;

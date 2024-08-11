@@ -42,7 +42,7 @@ public class EmployeeSortBydeparmentthenid {
             new EmployeeSortBydeparmentthenid("Eve", "Sales", 4)
         ));
 
-        // Sorting the list of employees
+        // Sorting the list of employees by their deparment and then id.
         employees.sort(Comparator
                 .comparing(EmployeeSortBydeparmentthenid::getDepartment)
                 .thenComparing(EmployeeSortBydeparmentthenid::getId));

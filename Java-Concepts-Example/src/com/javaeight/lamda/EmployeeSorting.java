@@ -35,6 +35,14 @@ public class EmployeeSorting {
 		list.add(emp3);
 		list.add(emp4);
 
+		List<String> listfileter=list.stream().filter(e->(e.getSalary()>50000 &&e.getDep()=="HR")).map(e->e.getName())
+				.collect(Collectors.toList());
+		
+		
+		System.out.println("listfileter"+listfileter);
+		
+		
+		
 		// sorted on the basis of Name
 		System.out.println("name sorting");
 		list.stream().sorted((emp5, emp6) -> (emp5.getName().compareTo(emp6.getName()))).collect(Collectors.toList())
