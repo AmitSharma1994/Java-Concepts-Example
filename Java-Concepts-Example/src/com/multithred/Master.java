@@ -1,4 +1,4 @@
-package com.multithred.runnableexm;
+package com.multithred;
 
 
 class Worker extends Thread{

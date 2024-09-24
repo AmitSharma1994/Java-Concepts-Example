@@ -1,4 +1,4 @@
-package com.multithred.runnableexm;
+package com.multithred;
 
 public class JoinExample {
     public static void main(String[] args) {

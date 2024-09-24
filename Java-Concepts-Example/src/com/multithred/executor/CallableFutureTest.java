@@ -7,43 +7,43 @@ import java.util.concurrent.FutureTask;
 
 class CallableExampel implements Callable {
 
-    @Override
-    public Object call() throws Exception {
-        Random generator = new Random();
-        Integer randomNumber = generator.nextInt(5);
+	@Override
+	public Object call() throws Exception {
+		Random generator = new Random();
+		Integer randomNumber = generator.nextInt(5);
 
-        Thread.sleep(randomNumber * 1000);
+		Thread.sleep(randomNumber * 1000);
 
-        return randomNumber;
-    }
+		return randomNumber;
+	}
 }
 
-
 public class CallableFutureTest {
-    public static void main(String[] args) throws ExecutionException, InterruptedException {
+	public static void main(String[] args) throws ExecutionException, InterruptedException {
 
-        FutureTask[] randomNumberTasks= new FutureTask[5];
+		FutureTask[] randomNumberTasks = new FutureTask[5];
 
-        for(int i=0;i<5;i++){
-            Callable callable=new CallableExampel();
+		for (int i = 0; i < 5; i++) {
 
-            // Create the FutureTask with Callable
-            randomNumberTasks[i] = new FutureTask(callable);
-// As it implements Runnable, create Thread
-            // with FutureTask
-            Thread t = new Thread(randomNumberTasks[i]);
-            t.start();
+			Callable callable = new CallableExampel();
 
-        }
-        for (int i = 0; i < 5; i++)
-        {
-            // As it implements Future, we can call get()
-            System.out.println(randomNumberTasks[i].get());
+			// Create the FutureTask with Callable
+			randomNumberTasks[i] = new FutureTask(callable);
+			// As it implements Runnable, create Thread
+			// with FutureTask
+			Thread t = new Thread(randomNumberTasks[i]);
+			t.start();
 
-            // This method blocks till the result is obtained
-            // The get method can throw checked exceptions
-            // like when it is interrupted. This is the reason
-            // for adding the throws clause to main
-        }
-    }
+		}
+
+		for (int i = 0; i < 5; i++) {
+			// As it implements Future, we can call get()
+			System.out.println(randomNumberTasks[i].get());
+
+			// This method blocks till the result is obtained
+			// The get method can throw checked exceptions
+			// like when it is interrupted. This is the reason
+			// for adding the throws clause to main
+		}
+	}
 }

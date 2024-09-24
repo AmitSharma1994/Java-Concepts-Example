@@ -2,6 +2,7 @@ package com.javaeight.lamda;
 
 import java.util.*;
 import java.util.function.Function;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 /*1. Given a list of integers, find out all the even numbers exist in the list.
@@ -21,10 +22,14 @@ public class QuesIntegerStream {
         List<Integer> mylist = Arrays.asList(10, 20, 30, 40, 5, 7);
         /*1. Given a list of integers, find out all the even numbers exist in the list
                 using Stream functions?*/
-        List<Integer> list1 = mylist.stream().filter(e -> e % 2 == 0).collect(Collectors.toList());
+       
+        Predicate<Integer> p=(e->e%2==0);
+        
+       // List<Integer> list1 = mylist.stream().filter(e -> e % 2 == 0).collect(Collectors.toList());
 
+        List<Integer> list1 = mylist.stream().filter(p).collect(Collectors.toList());
         //list.stream().filter(e->e%2==0).forEach(System.out::println);
-        System.out.println(list1);
+        System.out.println("list>>"+list1);
 
         /*2. Given a list of integers, find out all the numbers starting with 1 using Stream functions?*/
 

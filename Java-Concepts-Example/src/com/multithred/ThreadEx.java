@@ -1,6 +1,6 @@
-package com.multithred.runnableexm;
+package com.multithred;
 
-public class MultithreadingDemo extends Thread {
+public class ThreadEx extends Thread {
 
 	public void run() {
 		try {
@@ -20,7 +20,7 @@ public class MultithreadingDemo extends Thread {
 	public static void main(String[] args) {
 		
 		
-			MultithreadingDemo md = new MultithreadingDemo();
+		ThreadEx md = new ThreadEx();
 			md.start();
 			
 		//	md.start();

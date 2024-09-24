@@ -1,7 +1,7 @@
 package com.design.createnal;
 
 public class Singloton {
-private static Singloton sigle;
+private volatile static Singloton sigle;
 
 private Singloton() {
 

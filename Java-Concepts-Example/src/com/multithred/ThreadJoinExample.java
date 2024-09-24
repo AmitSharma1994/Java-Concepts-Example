@@ -1,4 +1,4 @@
-package com.multithred.runnableexm;
+package com.multithred;
 
 //A Java program for understanding   
 //the joining of threads  
