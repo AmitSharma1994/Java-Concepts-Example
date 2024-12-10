@@ -6,6 +6,7 @@ import java.util.Set;
 public class SetExample {
 
 	public static void main(String[] args) {
+
 		Set set=new HashSet();
 		
 		StringBuilder sb1=new StringBuilder("amit");

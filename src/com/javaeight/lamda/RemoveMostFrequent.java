@@ -20,7 +20,7 @@ public class RemoveMostFrequent {
 		/*
 		
 		//		int[] array = {1, 2, 3, 4, 3, 5, 5, 6, 7, 3, 5, 3, 5, 3};
-	//IntStream intStream=	Arrays.stream(array);
+	        //IntStream intStream=	Arrays.stream(array);
 	
 		Integer[] array = {1, 2, 3, 4, 3, 5, 5, 6, 7, 3, 5, 3, 5, 3};
 		

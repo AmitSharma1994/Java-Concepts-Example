@@ -7,7 +7,7 @@ import java.util.List;
 //finding the max and min word after removing all the multipe space.
 public class FindMinandMaxword {
     public static void main(String[] args) {
-        String str = "my country               is          india";
+        String str = "my country is india";
         System.out.println(str);
         String[] str1 = str.replaceAll("\\s+", " ").split(" ");
 

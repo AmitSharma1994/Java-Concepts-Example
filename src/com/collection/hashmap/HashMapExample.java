@@ -11,7 +11,7 @@ public class HashMapExample {
 	
 	int id ;
 	String name;
-	
+
 	public HashMapExample(int id, String name) {
 		super();
 		this.id = id;
@@ -42,10 +42,10 @@ public class HashMapExample {
 
 
 	public static void main(String[] args) {
-		
-		HashMapExample hme=new HashMapExample(1, "amit");
-		
-		HashMapExample hme2=new HashMapExample(1, "amit");
+
+		HashMapExample hme=new HashMapExample(1, "abc");
+
+		HashMapExample hme2=new HashMapExample(1, "abc");
 		
 		StringBuilder sb1=new StringBuilder("amit");
 		
