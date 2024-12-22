@@ -32,7 +32,7 @@ public class QuesStringStream2 {
 
     char ch = map.entrySet().stream().max(Map.Entry.comparingByValue()).map(e -> e.getKey()).get();
 
-		map.entrySet().stream().sorted(Map.Entry.comparingByValue()).map(e -> e.getKey()).findAny().get();
+		//map.entrySet().stream().sorted(Map.Entry.comparingByValue()).map(e -> e.getKey()).findAny().get();
 
     List<Character> list = map.entrySet().stream().sorted(Map.Entry.comparingByValue()).map(e -> e.getKey())
             .collect(Collectors.toList());
@@ -41,4 +41,4 @@ public class QuesStringStream2 {
 
 }
 
-}
+
