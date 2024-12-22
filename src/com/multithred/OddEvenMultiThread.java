@@ -3,7 +3,7 @@ package com.multithred;
 /**
  *
  */
-package com.java.multithreding;
+
 
 /**
  * @author Amit Sharma
