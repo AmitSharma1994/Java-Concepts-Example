@@ -8,6 +8,7 @@ public class Test {
 	public static void main(String[] args) {
 		
 		Test t1 = new Test();
+
 		t1.x = 10;
 		t1.y = 20;
 

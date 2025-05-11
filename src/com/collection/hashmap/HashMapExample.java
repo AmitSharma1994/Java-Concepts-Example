@@ -52,10 +52,13 @@ public class HashMapExample {
 		StringBuilder sb2=new StringBuilder("amit");
 		
 		HashMap<StringBuilder, Integer> hm=new HashMap<>();
+
+		HashMap<HashMapExample, Integer> hm1=new HashMap<>();
 		
 		Set set=new HashSet();
-		
-		
+
+		hm1.put(hme, 1);
+		hm1.put(hme2, 1);
 		//hm.put(hme, 1);
 		//hm.put(hme2, 1);
 		hm.put(sb1, 1);

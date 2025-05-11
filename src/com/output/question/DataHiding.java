@@ -2,7 +2,8 @@ package com.output.question;
 
 class A {
 
-	int i = 10;
+	 int i = 10;
+	//static int i = 10;
 }
 
 class B extends A {
@@ -11,7 +12,7 @@ class B extends A {
 
 }
 
-public class Staticvariable {
+public class DataHiding {
 	public static void main(String[] args) {
 		A a = new B();
 		System.out.println(a.i);

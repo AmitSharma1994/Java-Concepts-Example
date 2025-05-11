@@ -1,10 +1,7 @@
 package com.javaeight.lamda;
 
 import java.io.SequenceInputStream;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -67,12 +64,20 @@ public class EmployeeSocondHieghtSalary {
 		al.add(emp5);
 		al.add(emp6);
 
+
+
 		List<EmployeeSocondHieghtSalary> list = al.stream().sorted((e1, e2) -> (int) (e2.getSalary() - e1.getSalary()))
 				.skip(1).collect(Collectors.toList());
 
 		System.out.println("listchecking"+list);
-		
-		
+
+		//Method 1.
+
+		Optional<Double> sal=al.stream().map(EmployeeSocondHieghtSalary::getSalary).sorted((Collections.reverseOrder())).skip(1).findFirst();
+
+		System.out.println("sal"+sal);
+
+		//Method 2.
 		Optional<EmployeeSocondHieghtSalary> em = al.stream()
 				.sorted((e1, e2) -> (int) (e2.getSalary() - e1.getSalary())).skip(1).findFirst();
 

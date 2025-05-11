@@ -5,9 +5,10 @@ public class Autoboxing {
 	public static void main(String[] args) {
 		// long b = 1;
 
-		long b = 1;
+		//long b = 1;
+		int b = 1;
 
-		printVal(b);
+		printVal((long) b);
 
 	}
 
